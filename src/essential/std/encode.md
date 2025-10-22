@@ -83,12 +83,7 @@ func main() {
 
 ```go
 func main() {
-   var person = Person{
-      UserId:   "",
-      Username: "",
-      Age:      0,
-      Address:  "",
-   }
+   var person Person
 
    xmlStr := "<Person>                      \n        <id>120</id>          \n        <name>jack</name>     \n        <age>18</age>         \n        <address>usa</address>\n</Person>  "
 
@@ -207,7 +202,7 @@ func main() {
 
 ### JSON
 
-`json`在`Restful`风格的接口通信中经常会用到，其相较于`xml`更轻便的大小，低廉的学习成本使其在`web`领域称为了主流的数据交换格式。
+`json`在`Restful`风格的接口通信中经常会用到，其相较于`xml`更轻便的大小，低廉的学习成本使其在`web`领域成为了主流的数据交换格式。
 
 在 go 中，`encoding/json`包下提供对应的函数来进行 json 的序列化与反序列化，主要使用的有如下函数。
 
